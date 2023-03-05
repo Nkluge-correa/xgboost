@@ -167,3 +167,5 @@ async def predict(data: InputData):
     days, sales = api_call(data.dates, data.sales, data.ahead)
     return {"dates": days,
             "sales": sales}
+
+# uvicorn app_api:app --host 0.0.0.0 --port 10000 (render)
