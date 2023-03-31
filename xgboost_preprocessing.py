@@ -4,17 +4,7 @@ import xgboost as xgb
 from datetime import timedelta
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv('time_series_data.csv')
-
 scaler = StandardScaler()
-
-FEATURES = ['difference_1', 'difference_2', 'difference_3',
-            'difference_4', 'difference_5', 'difference_6',
-            'difference_7', 'moving_average_week',
-            'moving_average_two_weeks', 'difference_year',
-            'day_of_week', 'day_of_year', 'quarter', 'month', 'year']
-
-TARGET = ['sales']
 
 
 def create_dataframe(list1, list2):
